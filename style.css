@@ -1,0 +1,90 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+  color: #0056b3;
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* Form Styling */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004494;
+}
+
+/* Response Display */
+#response {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid styling
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+.grid-item {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.grid-item h3 {
+  margin-top: 0;
+} */
