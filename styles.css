@@ -1,0 +1,183 @@
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Center the form and response container */
+#apiForm,
+#response {
+  width: 80%;
+  max-width: 800px;
+}
+
+/* Form styling */
+#apiForm {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Form labels and inputs */
+#apiForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#apiForm input[type="text"],
+#apiForm input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* Submit button styling */
+#apiForm button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#apiForm button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Response container styling */
+#response {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Hide element */
+.hidden {
+  display: none;
+}
+
+/* Flight box styling */
+.flight-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Adjust width to take full container width */
+  box-sizing: border-box;
+}
+
+.flight-box img {
+  width: 80px; /* Adjust size of the airline logo */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.flight-box div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.flight-box p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.flight-box p strong {
+  color: #333;
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.pagination button.active {
+  background-color: #0056b3;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Style for the loading spinner */
+#loading {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 16px solid rgba(0, 0, 0, 0.1); /* Light grey background */
+  border-top: 16px solid #007bff; /* Blue color for the spinner */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1.5s linear infinite;
+  z-index: 1000;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Style for flight groups (connecting flights displayed side by side) */
+.flight-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.flight-group .flight-box {
+  width: 300px; /* Adjust width of each flight box as needed */
+}
